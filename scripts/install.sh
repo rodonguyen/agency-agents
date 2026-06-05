@@ -560,6 +560,24 @@ screen_teams() {
 
 # --- Screen: Review ---
 REVIEW_RESULT=""
+# grid_2col <cellwidth> <items...> — lay items out in two column-major columns
+# (left column filled top-to-bottom first). Plain text cells (no ANSI) so the
+# width padding stays correct.
+grid_2col() {
+  local w="$1"; shift
+  local n=$# r rows left right out=""
+  (( n==0 )) && { printf '     %snone%s\n' "$C_DIM" "$C_RESET"; return; }
+  local items=("$@")
+  rows=$(( (n + 1) / 2 ))
+  for (( r=0; r<rows; r++ )); do
+    left="${items[$r]}"
+    right="${items[$(( r + rows ))]:-}"
+    if [[ -n "$right" ]]; then out+="$(printf '     %-*s  %s' "$w" "$left" "$right")"$'\n'
+    else out+="     $left"$'\n'; fi
+  done
+  printf '%s' "$out"
+}
+
 screen_review() {
   local tools=() teams=() i agents
   for (( i=0; i<${#TOOL_SEL[@]}; i++ )); do [[ "${TOOL_SEL[$i]}" == 1 ]] && tools+=("$(tool_simple_name "${ALL_TOOLS[$i]}")"); done
@@ -570,8 +588,10 @@ screen_review() {
     local buf="" W=66
     buf+="  ${C_BOLD}${C_CYAN}${BX_TL}${BX_H}${BX_H} Review  —  3/3 $(repeat "$BX_H" 46)${BX_TR}${C_RESET}"$'\n\n'
     buf+="   ${C_BOLD}Installing ${agents} agents${C_RESET} from ${#teams[@]} teams to ${#tools[@]} tools"$'\n\n'
-    buf+="   Tools:  ${tools[*]:-none}"$'\n'
-    buf+="   Teams:  ${teams[*]:-none}"$'\n\n'
+    buf+="   ${C_BOLD}Tools${C_RESET} ${C_DIM}(${#tools[@]})${C_RESET}"$'\n'
+    buf+="$(grid_2col 16 ${tools[@]+"${tools[@]}"})"$'\n'
+    buf+="   ${C_BOLD}Teams${C_RESET} ${C_DIM}(${#teams[@]})${C_RESET}"$'\n'
+    buf+="$(grid_2col 20 ${teams[@]+"${teams[@]}"})"$'\n'
     local m; $USE_LINK && m="symlink" || m="copy"
     if (( cur==1 )); then buf+="   ${C_CYAN}${GLYPH_CUR}${C_RESET} Mode: ${C_BOLD}${m}${C_RESET}  ${C_DIM}(space toggles copy/symlink)${C_RESET}"$'\n'
     else buf+="     Mode: ${m}  ${C_DIM}(space toggles copy/symlink)${C_RESET}"$'\n'; fi
