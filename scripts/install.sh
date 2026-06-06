@@ -949,7 +949,7 @@ main() {
       --path)            OVERRIDE_PATH="${2:?'--path requires a value'}"; shift 2 ;;
       --no-convert)      AUTO_CONVERT=false; shift ;;
       --dry-run)         DRY_RUN=true; interactive_mode="no"; shift ;;
-      --list)            list_what="${2:-all}"; [[ "$list_what" == --* || -z "$list_what" ]] && { list_what="all"; shift; } || shift 2 ;;
+      --list)            if [[ -z "${2:-}" || "${2:-}" == --* ]]; then list_what="all"; shift; else list_what="$2"; shift 2; fi ;;
       --interactive)     interactive_mode="yes"; shift ;;
       --no-interactive)  interactive_mode="no"; shift ;;
       --parallel)        use_parallel=true; shift ;;

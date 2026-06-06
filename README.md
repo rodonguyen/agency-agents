@@ -123,6 +123,9 @@ Building the future, one commit at a time.
 | 🪡 [Minimal Change Engineer](engineering/engineering-minimal-change-engineer.md) | Minimum-viable diffs | Fixing only what's asked, no scope creep |
 | 📜 [OrgScript Engineer](engineering/engineering-orgscript-engineer.md) | OrgScript grammar & AST validation | Designing/parsing OrgScript business-logic definitions |
 | 🧬 [Prompt Engineer](engineering/engineering-prompt-engineer.md) | LLM prompt design & optimization | Turning vague instructions into reliable AI behaviors |
+| 🕸️ [Multi-Agent Systems Architect](engineering/engineering-multi-agent-systems-architect.md) | Multi-agent pipeline design & governance | Topology, context, trust, failure recovery for agent systems |
+| 🛒 [Drupal Shopping Cart Engineer](engineering/engineering-drupal-shopping-cart.md) | Drupal Commerce storefronts | Catalog, payments, checkout, orders on Drupal 10/11 |
+| 🛍️ [WordPress Shopping Cart Engineer](engineering/engineering-wordpress-shopping-cart.md) | WooCommerce storefronts | Catalog, payments, checkout, conversion on WordPress |
 
 ### 🎨 Design Division
 
@@ -349,6 +352,12 @@ The unique specialists who don't fit in a box.
 | 📝 [Grant Writer](specialized/grant-writer.md) | Grant proposals & funding | LOIs, proposals, budgets for nonprofits/research |
 | 🏥 [Medical Billing & Coding Specialist](specialized/medical-billing-coding-specialist.md) | ICD-10/CPT/HCPCS & revenue cycle | Claims, denial management, RCM optimization |
 | 💰 [Pricing Analyst](specialized/specialized-pricing-analyst.md) | Pricing models & margin optimization | Competitor/cost analysis, value-based pricing |
+| 💼 [Chief Financial Officer](specialized/chief-financial-officer.md) | Capital allocation & financial strategy | Treasury, FP&A, M&A finance, investor & board reporting |
+| 🌱 [ESG & Sustainability Officer](specialized/esg-sustainability-officer.md) | ESG programs & disclosure | Sustainability strategy, decarbonization, reporting |
+| 🔐 [Data Privacy Officer](specialized/data-privacy-officer.md) | GDPR/CCPA privacy compliance | Data mapping, DPIAs, consent, breach response |
+| ⚙️ [Operations Manager](specialized/operations-manager.md) | Lean/Six Sigma operations | Process mapping, capacity planning, KPI governance |
+| 🤝 [M&A Integration Manager](specialized/ma-integration-manager.md) | Post-merger integration | Day 1/100-day plans, synergy tracking, TSA management |
+| 🧠 [Organizational Psychologist](specialized/organizational-psychologist.md) | Team dynamics & culture health | Psychological safety, burnout risk, high-performing teams |
 
 ### 💵 Finance Division
 
@@ -578,7 +587,7 @@ Each agent is designed with:
 
 ## 📊 Stats
 
-- 🎭 **209 Specialized Agents** across 15 divisions
+- 🎭 **218 Specialized Agents** across 15 divisions
 - 📝 **10,000+ lines** of personality, process, and code examples
 - ⏱️ **Months of iteration** from real-world usage
 - 🌟 **Battle-tested** in production environments
@@ -960,7 +969,7 @@ MIT License - Use freely, commercially or personally. Attribution appreciated bu
 
 ## 🙏 Acknowledgments
 
-What started as a Reddit thread about AI agent specialization has grown into something remarkable — **209 agents across 15 divisions**, supported by a community of contributors from around the world. Every agent in this repo exists because someone cared enough to write it, test it, and share it.
+What started as a Reddit thread about AI agent specialization has grown into something remarkable — **218 agents across 15 divisions**, supported by a community of contributors from around the world. Every agent in this repo exists because someone cared enough to write it, test it, and share it.
 
 To everyone who has opened a PR, filed an issue, started a Discussion, or simply tried an agent and told us what worked — thank you. You're the reason The Agency keeps getting better.
 
