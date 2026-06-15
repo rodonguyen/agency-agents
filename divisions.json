@@ -1,0 +1,23 @@
+{
+  "_note": "Presentation metadata for agent divisions (the top-level directories). Each division maps to a display label, a Lucide icon name (PascalCase), and a brand color (hex). Consumed by the Agency Agents app and any other catalog tooling. The division set itself is the set of agent directories.",
+  "divisions": {
+    "academic": { "label": "Academic", "icon": "GraduationCap", "color": "#8B5CF6" },
+    "design": { "label": "Design", "icon": "PenTool", "color": "#EC4899" },
+    "engineering": { "label": "Engineering", "icon": "Code", "color": "#3B82F6" },
+    "finance": { "label": "Finance", "icon": "DollarSign", "color": "#22C55E" },
+    "game-development": { "label": "Game Development", "icon": "Gamepad2", "color": "#A855F7" },
+    "gis": { "label": "GIS", "icon": "Map", "color": "#14B8A6" },
+    "integrations": { "label": "Integrations", "icon": "Workflow", "color": "#64748B" },
+    "marketing": { "label": "Marketing", "icon": "Megaphone", "color": "#F97316" },
+    "paid-media": { "label": "Paid Media", "icon": "Target", "color": "#EAB308" },
+    "product": { "label": "Product", "icon": "Box", "color": "#D946EF" },
+    "project-management": { "label": "Project Management", "icon": "ClipboardList", "color": "#0EA5E9" },
+    "sales": { "label": "Sales", "icon": "TrendingUp", "color": "#10B981" },
+    "security": { "label": "Security", "icon": "ShieldCheck", "color": "#EF4444" },
+    "spatial-computing": { "label": "Spatial Computing", "icon": "Boxes", "color": "#06B6D4" },
+    "specialized": { "label": "Specialized", "icon": "Sparkles", "color": "#6366F1" },
+    "strategy": { "label": "Strategy", "icon": "Network", "color": "#F43F5E" },
+    "support": { "label": "Support", "icon": "LifeBuoy", "color": "#84CC16" },
+    "testing": { "label": "Testing", "icon": "FlaskConical", "color": "#F59E0B" }
+  }
+}
