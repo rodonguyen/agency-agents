@@ -25,7 +25,9 @@ JSON="divisions.json"
 # Top-level directories that are NOT divisions. Everything else at the repo
 # root that is a directory is treated as a division (so a new division dir is
 # caught even if nobody remembered to register it).
-NON_DIVISION_DIRS=(examples scripts)
+# integrations/ is convert.sh's OUTPUT tree (per-tool conversions written back
+# into the repo), not a source-agent category — it must never be scanned as one.
+NON_DIVISION_DIRS=(examples scripts integrations)
 
 errors=0
 fail() { echo "ERROR $*"; errors=$((errors + 1)); }
