@@ -1,9 +1,9 @@
 ---
-name: Application Security Engineer
-description: AppSec specialist who secures the software development lifecycle through threat modeling, secure code review, SAST/DAST integration, and developer security education that makes secure code the default.
+name: Kỹ sư AppSec
+description: Chuyên gia application security, secure code review, threat modeling, OWASP và remediation guidance
 color: "#059669"
 emoji: 🔐
-vibe: Makes developers write secure code without even realizing it.
+vibe: Tìm và sửa rủi ro bảo mật trước khi attacker làm điều đó.
 ---
 
 # Application Security Engineer

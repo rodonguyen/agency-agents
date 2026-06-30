@@ -1,27 +1,27 @@
-# Multi-Agent Workflow: Landing Page Sprint
+# Workflow Multi-Agent: Sprint Landing Page
 
-> Ship a conversion-optimized landing page in one day using 4 agents.
+> Ship một landing page tối ưu chuyển đổi trong một ngày bằng 4 agent.
 
-## The Scenario
+## Bối cảnh
 
-You need a landing page for a new product launch. It needs to look great, convert visitors, and be live by end of day.
+Bạn cần một landing page cho đợt ra mắt sản phẩm mới. Trang phải đẹp, có khả năng chuyển đổi visitor và được deploy trước cuối ngày.
 
-## Agent Team
+## Đội agent
 
-| Agent | Role in this workflow |
-|-------|---------------------|
-| Content Creator | Write the copy |
-| UI Designer | Design the layout and component specs |
-| Frontend Developer | Build it |
-| Growth Hacker | Optimize for conversion |
+| Agent | Vai trò trong workflow |
+|-------|------------------------|
+| Content Creator | Viết copy |
+| UI Designer | Thiết kế layout và component spec |
+| Frontend Developer | Xây trang |
+| Growth Hacker | Tối ưu conversion |
 
-## The Workflow
+## Workflow
 
-### Morning: Copy + Design (parallel)
+### Buổi sáng: Copy + Design song song
 
-**Step 1a — Activate Content Creator**
+**Bước 1a — Kích hoạt Content Creator**
 
-```
+```text
 Activate Content Creator.
 
 Write landing page copy for "FlowSync" — an API integration platform
@@ -41,9 +41,9 @@ Sections needed:
 Keep it scannable. No fluff.
 ```
 
-**Step 1b — Activate UI Designer (in parallel)**
+**Bước 1b — Kích hoạt UI Designer song song**
 
-```
+```text
 Activate UI Designer.
 
 Design specs for a SaaS landing page. Product: FlowSync (API integration platform).
@@ -57,11 +57,11 @@ Deliver:
 5. Responsive breakpoints (mobile, tablet, desktop)
 ```
 
-### Midday: Build
+### Giữa ngày: Build
 
-**Step 2 — Activate Frontend Developer**
+**Bước 2 — Kích hoạt Frontend Developer**
 
-```
+```text
 Activate Frontend Developer.
 
 Build a landing page from these specs:
@@ -79,41 +79,38 @@ Requirements:
 Deliver a single index.html file ready to deploy.
 ```
 
-### Afternoon: Optimize
+### Buổi chiều: Tối ưu conversion
 
-**Step 3 — Activate Growth Hacker**
+**Bước 3 — Kích hoạt Growth Hacker**
 
-```
+```text
 Activate Growth Hacker.
 
-Review this landing page for conversion optimization:
+Review this landing page for conversion:
+[paste built HTML or screenshot]
 
-[paste the HTML or describe the current page]
-
-Evaluate:
-1. Is the CTA above the fold?
-2. Is the value proposition clear in under 5 seconds?
-3. Any friction in the signup flow?
-4. What A/B tests would you run first?
-5. SEO basics: meta tags, OG tags, structured data
-
-Give me specific changes, not general advice.
+Find:
+1. Weak points in the messaging
+2. Missing trust signals
+3. CTA improvements
+4. One A/B test idea for the hero
+5. Analytics events we should track
 ```
 
-## Timeline
+**Bước 4 — Quay lại Frontend Developer**
 
-| Time | Activity | Agent |
-|------|----------|-------|
-| 9:00 | Copy + design kick off (parallel) | Content Creator + UI Designer |
-| 11:00 | Build starts | Frontend Developer |
-| 14:00 | First version ready | — |
-| 14:30 | Conversion review | Growth Hacker |
-| 15:30 | Apply feedback | Frontend Developer |
-| 16:30 | Ship | Deploy to Vercel/Netlify |
+```text
+Activate Frontend Developer.
 
-## Key Patterns
+Apply these conversion improvements:
+[paste Growth Hacker feedback]
 
-1. **Parallel kickoff**: Copy and design happen at the same time since they're independent
-2. **Merge point**: Frontend Developer needs both outputs before starting
-3. **Feedback loop**: Growth Hacker reviews, then Frontend Developer applies changes
-4. **Time-boxed**: Each step has a clear timebox to prevent scope creep
+Keep the page fast, accessible, and visually consistent.
+```
+
+## Bài học chính
+
+- Chạy copy và design song song giúp tiết kiệm thời gian.
+- Frontend Developer chỉ nên bắt đầu khi copy và design đã đủ rõ.
+- Growth Hacker nên review sau khi có trang cụ thể, không chỉ review ý tưởng.
+- Workflow nhỏ vẫn cần handoff rõ ràng: copy → design → build → optimize.

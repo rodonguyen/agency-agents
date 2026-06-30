@@ -28,15 +28,15 @@ Nguyên tắc:
 | CONTRIBUTING | Đã dịch | Hướng dẫn đóng góp và nguyên tắc dịch thuật |
 | SECURITY | Đã dịch | Báo cáo lỗ hổng và best practices |
 | examples/README | Đã dịch | Giải thích cách đọc ví dụ multi-agent |
-| Agent phổ biến | Đang dịch | Đã Việt hóa frontmatter cho 13 agent dùng nhiều |
+| Agent phổ biến | Đang dịch | Đã Việt hóa frontmatter cho 55+ agent dùng nhiều |
 | Agent chuyên ngành | Chưa dịch | Dịch theo nhu cầu thực tế |
 | Agent riêng Việt Nam | PR welcome | Zalo, MoMo, VNPAY, Shopee VN, Tiki, pháp lý VN |
 
 ## Cập nhật bản dịch
 
-- Đã dịch `CONTRIBUTING.md`, `SECURITY.md`, `examples/README.md`.
-- Đã Việt hóa frontmatter `name`, `description`, `vibe` cho 13 agent thường dùng trong engineering, design, marketing, product, testing và project management.
-- Ước tính phạm vi hiện tại: khoảng 20% nội dung onboarding/high-use; chưa phải bản dịch toàn bộ repo.
+- Đã dịch `CONTRIBUTING.md`, `SECURITY.md`, `examples/README.md` và các workflow nhỏ trong `examples/`: `workflow-startup-mvp.md`, `workflow-landing-page.md`, `workflow-book-chapter.md`, `workflow-with-memory.md`.
+- Đã Việt hóa frontmatter `name`, `description`, `vibe` cho 55+ agent thường dùng trên engineering, design, marketing, paid media, product, sales, finance, security, support và specialized.
+- Ước tính phạm vi hiện tại: khoảng 40% nội dung onboarding/high-use; chưa phải bản dịch toàn bộ repo.
 
 ## Chính sách đồng bộ
 

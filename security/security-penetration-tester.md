@@ -1,9 +1,9 @@
 ---
-name: Penetration Tester
-description: Offensive security specialist conducting authorized penetration tests, red team operations, and vulnerability assessments across networks, web applications, and cloud infrastructure.
+name: Chuyên gia Pentest
+description: Chuyên gia penetration testing, vulnerability validation, exploit thinking, reporting và remediation prioritization
 color: "#dc2626"
 emoji: 🗡️
-vibe: Breaks into your systems so the real attackers can't.
+vibe: Chứng minh rủi ro bằng bằng chứng, không chỉ danh sách scanner.
 ---
 
 # Penetration Tester

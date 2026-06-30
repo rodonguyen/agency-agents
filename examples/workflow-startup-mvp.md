@@ -1,30 +1,30 @@
-# Multi-Agent Workflow: Startup MVP
+# Workflow Multi-Agent: Startup MVP
 
-> A step-by-step example of how to coordinate multiple agents to go from idea to shipped MVP.
+> Ví dụ từng bước về cách phối hợp nhiều agent để đi từ ý tưởng đến MVP có thể ship.
 
-## The Scenario
+## Bối cảnh
 
-You're building a SaaS MVP — a team retrospective tool for remote teams. You have 4 weeks to ship a working product with user signups, a core feature, and a landing page.
+Bạn đang xây một SaaS MVP: công cụ retrospective cho team remote. Bạn có 4 tuần để ship sản phẩm chạy được với signup, một core feature và landing page.
 
-## Agent Team
+## Đội agent
 
-| Agent | Role in this workflow |
-|-------|---------------------|
-| Sprint Prioritizer | Break the project into weekly sprints |
-| UX Researcher | Validate the idea with quick user interviews |
-| Backend Architect | Design the API and data model |
-| Frontend Developer | Build the React app |
-| Rapid Prototyper | Get the first version running fast |
-| Growth Hacker | Plan launch strategy while building |
-| Reality Checker | Gate each milestone before moving on |
+| Agent | Vai trò trong workflow |
+|-------|------------------------|
+| Sprint Prioritizer | Chia dự án thành sprint theo tuần |
+| UX Researcher | Validate ý tưởng bằng phỏng vấn nhanh |
+| Backend Architect | Thiết kế API và data model |
+| Frontend Developer | Xây React app |
+| Rapid Prototyper | Dựng phiên bản đầu thật nhanh |
+| Growth Hacker | Lên kế hoạch launch song song khi build |
+| Reality Checker | Gate từng milestone trước khi đi tiếp |
 
-## The Workflow
+## Workflow
 
-### Week 1: Discovery + Architecture
+### Tuần 1: Discovery + Architecture
 
-**Step 1 — Activate Sprint Prioritizer**
+**Bước 1 — Kích hoạt Sprint Prioritizer**
 
-```
+```text
 Activate Sprint Prioritizer.
 
 Project: RetroBoard — a real-time team retrospective tool for remote teams.
@@ -35,9 +35,9 @@ Constraints: solo developer, React + Node.js stack, deploy to Vercel + Railway.
 Break this into 4 weekly sprints with clear deliverables and acceptance criteria.
 ```
 
-**Step 2 — Activate UX Researcher (in parallel)**
+**Bước 2 — Kích hoạt UX Researcher song song**
 
-```
+```text
 Activate UX Researcher.
 
 I'm building a team retrospective tool for remote teams (5-20 people).
@@ -51,9 +51,9 @@ Run a quick competitive analysis and identify:
 Output a 1-page research brief.
 ```
 
-**Step 3 — Hand off to Backend Architect**
+**Bước 3 — Handoff cho Backend Architect**
 
-```
+```text
 Activate Backend Architect.
 
 Here's our sprint plan: [paste Sprint Prioritizer output]
@@ -69,87 +69,64 @@ Deliver:
 4. Auth strategy recommendation
 ```
 
-### Week 2: Build Core Features
+### Tuần 2: Build core feature
 
-**Step 4 — Activate Frontend Developer + Rapid Prototyper**
+**Bước 4 — Frontend Developer + Rapid Prototyper**
 
-```
+```text
 Activate Frontend Developer.
 
 Here's the API spec: [paste Backend Architect output]
-
-Build the RetroBoard React app:
-- Stack: React, TypeScript, Tailwind, Socket.io-client
-- Pages: Login, Dashboard, Board view
-- Components: RetroCard, VoteButton, ActionItem, BoardColumn
-
-Start with the Board view — it's the core experience.
-Focus on real-time: when one user adds a card, everyone sees it.
+Build the core RetroBoard UI in React.
+Focus only on: create board, add cards, vote, action items.
+Skip polish unless it affects usability.
 ```
 
-**Step 5 — Reality Check at midpoint**
+```text
+Activate Rapid Prototyper.
 
-```
-Activate Reality Checker.
-
-We're at week 2 of a 4-week MVP build for RetroBoard.
-
-Here's what we have so far:
-- Database schema: [paste]
-- API endpoints: [paste]
-- Frontend components: [paste]
-
-Evaluate:
-1. Can we realistically ship in 2 more weeks?
-2. What should we cut to make the deadline?
-3. Any technical debt that will bite us at launch?
+Help me get the first end-to-end version running quickly.
+Identify the shortest path to a working demo and list what to fake, defer, or hard-code.
 ```
 
-### Week 3: Polish + Landing Page
+### Tuần 3: Launch preparation
 
-**Step 6 — Frontend Developer continues, Growth Hacker starts**
+**Bước 5 — Kích hoạt Growth Hacker**
 
-```
+```text
 Activate Growth Hacker.
 
-Product: RetroBoard — team retrospective tool, launching in 1 week.
-Target: Engineering managers and scrum masters at remote-first companies.
-Budget: $0 (organic launch only).
+We are 1 week from beta launch for RetroBoard.
+Target users: remote engineering managers and startup founders.
+Budget: $0.
 
-Create a launch plan:
-1. Landing page copy (hero, features, CTA)
-2. Launch channels (Product Hunt, Reddit, Hacker News, Twitter)
-3. Day-by-day launch sequence
-4. Metrics to track in week 1
+Create a launch plan with:
+1. 3 acquisition channels
+2. Landing page messaging angle
+3. Beta user recruitment plan
+4. Metrics to track in week one
 ```
 
-### Week 4: Launch
+### Tuần 4: Reality check + ship
 
-**Step 7 — Final Reality Check**
+**Bước 6 — Kích hoạt Reality Checker**
 
-```
+```text
 Activate Reality Checker.
 
-RetroBoard is ready to launch. Evaluate production readiness:
+Review this MVP plan and current status:
+[paste sprint output, demo notes, launch plan]
 
-- Live URL: [url]
-- Test accounts created: yes
-- Error monitoring: Sentry configured
-- Database backups: daily automated
-
-Run through the launch checklist and give a GO / NO-GO decision.
-Require evidence for each criterion.
+Tell me:
+1. What is actually ready
+2. What must be cut
+3. What risk could block launch
+4. The smallest credible launch scope
 ```
 
-## Key Patterns
+## Bài học chính
 
-1. **Sequential handoffs**: Each agent's output becomes the next agent's input
-2. **Parallel work**: UX Researcher and Sprint Prioritizer can run simultaneously in Week 1
-3. **Quality gates**: Reality Checker at midpoint and before launch prevents shipping broken code
-4. **Context passing**: Always paste previous agent outputs into the next prompt — agents don't share memory
-
-## Tips
-
-- Copy-paste agent outputs between steps — don't summarize, use the full output
-- If a Reality Checker flags an issue, loop back to the relevant specialist to fix it
-- Keep the Orchestrator agent in mind for automating this flow once you're comfortable with the manual version
+- Sprint Prioritizer giúp tránh scope creep ngay từ đầu.
+- UX Researcher và Backend Architect nên chạy trước khi build quá sâu.
+- Growth Hacker chuẩn bị launch trong khi sản phẩm đang được xây.
+- Reality Checker bảo vệ MVP khỏi việc “gần xong nhưng không ship được”.

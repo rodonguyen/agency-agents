@@ -1,55 +1,76 @@
-# Workflow Example: Book Chapter Development
+# Workflow Multi-Agent: Chương sách
 
-> A focused single-agent workflow for turning rough source material into a strategic first-person chapter draft with explicit revision loops.
+> Ví dụ dùng nhiều agent để lên ý tưởng, cấu trúc và viết một chương sách rõ ràng hơn.
 
-## When to Use This
+## Bối cảnh
 
-Use this workflow when an author has voice notes, fragments, or strategic notes, but not yet a clean chapter draft. The goal is not generic ghostwriting. The goal is to produce a chapter that strengthens category positioning, preserves the author's voice, and exposes open editorial decisions clearly.
+Bạn muốn viết một chương sách về AI agents cho độc giả kỹ thuật nhưng không chuyên nghiên cứu. Mục tiêu là chương phải dễ đọc, có lập luận rõ và ví dụ thực tế.
 
-## Agent Used
+## Đội agent
 
-| Agent | Role |
-|-------|------|
-| Book Co-Author | Converts source material into a versioned chapter draft with editorial notes and next-step questions |
+| Agent | Vai trò |
+|-------|---------|
+| Narratologist | Thiết kế cấu trúc câu chuyện |
+| Psychologist | Kiểm tra động lực và hành vi người đọc |
+| Technical Writer | Làm rõ nội dung kỹ thuật |
+| Content Creator | Viết bản nháp dễ đọc |
+| Reality Checker | Bắt lỗi claim mơ hồ hoặc quá đà |
 
-## Example Activation
+## Workflow
+
+### Bước 1 — Tạo outline
 
 ```text
-Activate Book Co-Author.
+Activate Narratologist.
 
-Book goal: Build authority around practical AI adoption for Mittelstand companies.
-Target audience: Owners and operational leaders of 20-200 person businesses.
-Chapter topic: Why most AI projects fail before implementation starts.
-Desired draft maturity: First substantial draft.
-
-Raw material:
-- Voice memo: "The real failure happens in expectation setting, not tooling."
-- Notes: Leaders buy software before defining the operational bottleneck.
-- Story fragment: We nearly rolled out the wrong automation in a cabinetmaking workflow because the actual problem was quoting delays, not production throughput.
-- Positioning angle: Practical realism over hype.
-
-Produce:
-1. Chapter objective and strategic role in the book
-2. Any clarification questions you need
-3. Chapter 2 - Version 1 - ready for review
-4. Editorial notes on assumptions and proof gaps
-5. Specific next-step revision requests
+Create a chapter outline about AI agents for technical builders.
+Goal: explain why agents are different from simple prompts.
+Tone: practical, curious, not hype-driven.
+Deliver: chapter arc, section titles, and the emotional progression for the reader.
 ```
 
-## Expected Output Shape
+### Bước 2 — Kiểm tra người đọc
 
-The Book Co-Author should respond in five parts:
+```text
+Activate Psychologist.
 
-1. `Target Outcome`
-2. `Chapter Draft`
-3. `Editorial Notes`
-4. `Feedback Loop`
-5. `Next Step`
+Review this chapter outline for reader motivation and cognitive load.
+Audience: developers and product builders who are skeptical of AI hype.
+Tell me where readers may get confused, bored, or defensive.
+```
 
-## Quality Bar
+### Bước 3 — Làm rõ kỹ thuật
 
-- The draft stays in first-person voice
-- The chapter has one clear promise and internal logic
-- Claims are tied to source material or flagged as assumptions
-- Generic motivational language is removed
-- The output ends with explicit revision questions, not a vague handoff
+```text
+Activate Technical Writer.
+
+Turn this outline into a technically accurate explanation.
+Define agent, tool use, memory, orchestration, and evaluation.
+Avoid vague claims. Use concrete examples.
+```
+
+### Bước 4 — Viết bản nháp
+
+```text
+Activate Content Creator.
+
+Write the first draft of the chapter from this material.
+Keep it readable, concrete, and example-driven.
+Use short sections and strong transitions.
+```
+
+### Bước 5 — Reality check
+
+```text
+Activate Reality Checker.
+
+Review this chapter draft.
+Flag unsupported claims, hype language, weak examples, and places where the reader may ask "so what?".
+Suggest precise edits.
+```
+
+## Bài học chính
+
+- Narratologist lo mạch truyện; Technical Writer lo độ chính xác.
+- Psychologist giúp giảm friction cho độc giả hoài nghi.
+- Reality Checker nên vào cuối để cắt hype và làm claim chặt hơn.
